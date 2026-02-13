@@ -113,6 +113,13 @@
       color: var(--text);
     }
 
+    .hero .brand-icon {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      display: inline-block;
+    }
+
     .hero h1 {
       font-size: clamp(2.2rem, 5.5vw, 3.3rem);
       font-weight: 700;
@@ -1275,7 +1282,7 @@
 <body>
   <!-- Hero Section -->
   <section class="hero">
-    <div class="brand">Steep 🫖</div>
+    <div class="brand"><img src="steepot_small.png" alt="Steep" class="brand-icon">Steep</div>
     <h1>Create invoices in 60 seconds</h1>
     <p class="tagline">Simple. Fast. No sign-up. Send it!</p>
     <p class="subtagline">We don’t store any of your data. All data is stored locally in your own browser 😎</p>
