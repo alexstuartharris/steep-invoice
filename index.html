@@ -32,7 +32,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playwrite+NZ&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playwrite+NZ&display=swap" rel="stylesheet">
   
   <!-- PDF Generation -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -40,6 +40,7 @@
   
   <style>
     :root {
+      --font-body: 'DM Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       --bg: #0a0a0a;
       --surface: #141414;
       --surface-elevated: #1a1a1a;
@@ -84,7 +85,7 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: var(--font-body);
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -107,7 +108,7 @@
       align-items: center;
       gap: 0.5rem;
       font-weight: 700;
-      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      font-size: clamp(1.4rem, 3vw, 1.75rem);
       letter-spacing: -0.01em;
       margin-bottom: 0.75rem;
       color: var(--text);
