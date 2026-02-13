@@ -192,6 +192,9 @@
 
     @media (min-width: 1024px) {
       .wizard-container {
+        grid-template-columns: 1fr 1fr;
+      }
+      .wizard-container.wide-form {
         grid-template-columns: 3fr 2fr;
       }
     }
@@ -1899,6 +1902,11 @@
       document.querySelectorAll('.form-section').forEach(section => {
         section.classList.toggle('active', parseInt(section.dataset.section) === step);
       });
+
+      const wizard = document.querySelector('.wizard-container');
+      if (wizard) {
+        wizard.classList.toggle('wide-form', step === 3);
+      }
     }
 
     function nextStep() {
