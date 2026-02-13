@@ -102,6 +102,16 @@
       border-bottom: 1px solid var(--border);
     }
 
+    .hero .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.75rem;
+      color: var(--text-secondary);
+    }
+
     .hero h1 {
       font-size: clamp(2rem, 5vw, 3rem);
       font-weight: 700;
@@ -1061,12 +1071,16 @@
       font-size: 1.25rem;
       font-weight: 600;
       margin-bottom: 0.75rem;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .step-card p {
       color: var(--text-secondary);
       font-size: 0.9375rem;
       line-height: 1.6;
+      max-width: 260px;
+      margin: 0 auto;
     }
 
     @media (max-width: 768px) {
@@ -1236,8 +1250,9 @@
 <body>
   <!-- Hero Section -->
   <section class="hero">
+    <div class="brand">Steep 🫖</div>
     <h1>Create beautiful invoices in 60 seconds</h1>
-    <p class="tagline">Simple. Fast. No sign-up invoices. Get to it!</p>
+    <p class="tagline">Simple. Fast. No sign-up. Send it!</p>
     <div class="trust-badges">
       <div class="badge">
         <div class="badge-icon">🚫</div>
