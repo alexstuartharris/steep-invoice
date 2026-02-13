@@ -192,7 +192,7 @@
 
     @media (min-width: 1024px) {
       .wizard-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 3fr 2fr;
       }
     }
 
@@ -399,8 +399,8 @@
 
     .line-item {
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr auto;
-      gap: 1rem;
+      grid-template-columns: 2.6fr 0.6fr 0.9fr 1fr auto;
+      gap: 0.75rem;
       margin-bottom: 1rem;
       padding: 1rem;
       background: var(--surface);
@@ -412,6 +412,15 @@
 
     .line-item input, .line-item textarea {
       min-width: 0;
+    }
+
+    .line-item .item-qty {
+      max-width: 90px;
+    }
+
+    .line-item .item-rate,
+    .line-item .item-amount {
+      max-width: 140px;
     }
 
     @media (max-width: 768px) {
